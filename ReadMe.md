@@ -19,5 +19,13 @@ This question could be explored further by looking at different factors such as:
 ## IMPACT
 There is a general curiosity about this group, as it is a very romantic idea. This means that it could result in traffic and general interest showcasing my skillset. The project itself would showcase my ability to build a pipeline to visualize open sourced data. I also have the opportunity to publish this in the **Conversation** as a follow on from the previous study.
 
+## FUNCTIONS
+	* **name_add_underscore**: takes First Last returns First_Last
+	* **name_remove_underscore**: takes First_Last returns First Last
+	* **wikipedia_name_scrape**: returns wikipedia page of person (if exists)
+	* **wikipedia_death_date**: returns death date of person (if dead)
+
 ## Next Steps
-  * What information can be extracted from a musician's Wikipedia page 
+  * Need to generate lists of people using Wikipedia api (categories = (Musician, People))
+	* Feed lists into wikipedia_death_dates
+	* Construct histograms comparing death_dates of Musician and People
