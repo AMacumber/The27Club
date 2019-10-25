@@ -19,13 +19,25 @@ This question could be explored further by looking at different factors such as:
 ## IMPACT
 There is a general curiosity about this group, as it is a very romantic idea. This means that it could result in traffic and general interest showcasing my skillset. The project itself would showcase my ability to build a pipeline to visualize open sourced data. I also have the opportunity to publish this in the **Conversation** as a follow on from the previous study.
 
-## FUNCTIONS
-	* **name_add_underscore**: takes First Last returns First_Last
-	* **name_remove_underscore**: takes First_Last returns First Last
-	* **wikipedia_name_scrape**: returns wikipedia page of person (if exists)
-	* **wikipedia_death_date**: returns death date of person (if dead)
+## Workflows
+    * **Histogram_AgeAtDeath**: Creates a histogram of age at death
+    
+## Functions
+    * **return_cat_pages**: given list of categories, return all pages
+        * **format_wiki_cat**: adds 'Category:' prior to category name
+        * **catmembers_list**: given category, return all pages 
+	
+	* **death_age**: given list of wiki page names, return dictionary = ['Person Name']: Age At Death
+        * **person_born_dead**: given page name, return set of (Born date, Death date)
+        * **create_wiki_url**: given page name, return wikipedia url
+        * **scrape_wiki_page**: given wikipedia url, return scraped text
+        * **calculate_age**: given birth & death, return age at death
+
+## Successes
+    * Given list of people, return date of birth and death from wikipedia page
+    * Give list of categories, return list of category members as wikipedia page names
 
 ## Next Steps
-  * Need to generate lists of people using Wikipedia api (categories = (Musician, People))
-	* Feed lists into wikipedia_death_dates
-	* Construct histograms comparing death_dates of Musician and People
+    * Feed results of **return_cat_pages** into **return_people_dates**
+	* Return age at death
+	* Construct histogram of age at death
