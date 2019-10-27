@@ -39,5 +39,6 @@ There is a general curiosity about this group, as it is a very romantic idea. Th
 
 ## Next Steps
     * Feed results of **return_cat_pages** into **return_people_dates**
+    * * Error - negative ages; also 16 hours to return results
 	* Return age at death
 	* Construct histogram of age at death
