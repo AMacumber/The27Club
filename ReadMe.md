@@ -20,7 +20,9 @@ This question could be explored further by looking at different factors such as:
 There is a general curiosity about this group, as it is a very romantic idea. This means that it could result in traffic and general interest showcasing my skillset. The project itself would showcase my ability to build a pipeline to visualize open sourced data. I also have the opportunity to publish this in the **Conversation** as a follow on from the previous study.
 
 ## Workflows
-    * **Histogram_AgeAtDeath**: Creates a histogram of age at death
+    * **Histogram_AgeAtDeath**: List_Catmembers | DictAgeAtDeath, create a histogram
+    * **List_Catmembers**: Return a list of musicians from wikipedia
+    * **Dict_AgeAtDeath**: Returns a dictionary of musicians and age at death
     
 ## Functions
     * **return_cat_pages**: given list of categories, return all pages
