@@ -20,27 +20,43 @@ This question could be explored further by looking at different factors such as:
 There is a general curiosity about this group, as it is a very romantic idea. This means that it could result in traffic and general interest showcasing my skillset. The project itself would showcase my ability to build a pipeline to visualize open sourced data. I also have the opportunity to publish this in the **Conversation** as a follow on from the previous study.
 
 ## Workflows
-    * **Histogram_AgeAtDeath**: List_Catmembers | DictAgeAtDeath, create a histogram
-    * **List_Catmembers**: Return a list of musicians from wikipedia
-    * **Dict_AgeAtDeath**: Returns a dictionary of musicians and age at death
+
+* **ReplicateFigure**: From wiki api query to figure in conversation
+
+### Sub Work Flows
+
+* **List_Catmembers**: Return a list of musicians from wikipedia
+* **Dict_AgeAtDeath**: Returns a dictionary of musicians and age at death
+* **AgeAtDeath_Replicate**: List_Catmembers | DictAgeAtDeath, replicate figure
     
 ## Functions
-    * **return_cat_pages**: given list of categories, return all pages
-        * **format_wiki_cat**: adds 'Category:' prior to category name
-        * **catmembers_list**: given category, return all pages 
+
+* **return_cat_pages**: given list of categories, return all pages
+    * **format_wiki_cat**: adds 'Category:' prior to category name
+    * **catmembers_list**: given category, return all pages 
 	
-	* **death_age**: given list of wiki page names, return dictionary = ['Person Name']: Age At Death
-        * **person_born_dead**: given page name, return set of (Born date, Death date)
-        * **create_wiki_url**: given page name, return wikipedia url
-        * **scrape_wiki_page**: given wikipedia url, return scraped text
-        * **calculate_age**: given birth & death, return age at death
+* **death_age**: given list of wiki page names, return dictionary = ['Person Name']: Age At Death
+    * **person_born_dead**: given page name, return set of (Born date, Death date)
+    * **create_wiki_url**: given page name, return wikipedia url
+    * **scrape_wiki_page**: given wikipedia url, return scraped text
+    * **calculate_age**: given birth & death, return age at death
+    
+* SaveLoad: use JSON to dump and load dictionaries
+        
+## Tests
+
+* Dictionary conditional values: filter a dictionary
+* Dictoinary structure: find number of items in dictionary, sample randomly
+* return_cat_pages()
 
 ## Successes
-    * Given list of people, return date of birth and death from wikipedia page
-    * Give list of categories, return list of category members as wikipedia page names
+
+* Given list of people, return date of birth and death from wikipedia page
+* Give list of categories, return list of category members as wikipedia page names
+* Given list of people, return dictionary with name: age at death
+* Given age at death dictionary, create a histogram of counts or percents by age
+* Storing dictionaries locally
 
 ## Next Steps
-    * Feed results of **return_cat_pages** into **return_people_dates**
-    * * Error - negative ages; also 16 hours to return results
-	* Return age at death
-	* Construct histogram of age at death
+
+* Evenly space spikes in the dataset (huh?)
