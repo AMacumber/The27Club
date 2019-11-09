@@ -21,7 +21,7 @@ There is a general curiosity about this group, as it is a very romantic idea. Th
 
 ## Workflows
 
-* **ReplicateFigure**: From wiki api query to figure in conversation
+* **ReplicateFigure**: List_Catmembers | Dict_AgeAtDeath | AgeAtDeath_ReplicateFigure
 
 ### Sub Work Flows
 
@@ -59,4 +59,5 @@ There is a general curiosity about this group, as it is a very romantic idea. Th
 
 ## Next Steps
 
-* Evenly space spikes in the dataset (huh?)
+* Comparison to Conversation results
+* Write Up
